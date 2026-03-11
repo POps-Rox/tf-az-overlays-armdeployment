@@ -12,6 +12,6 @@ module "mod_deploy_vnet_sample" {
   arm_script = file("${path.module}/${var.arm_script}")
 
   parameters_override = {
-    "vnetName" = var.vnet_name 
+    "vnetName" = var.vnet_name
   }
 }

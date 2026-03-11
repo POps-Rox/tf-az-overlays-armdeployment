@@ -12,8 +12,8 @@ resource "azurerm_subscription_template_deployment" "subscription_deploy" {
     ignore_changes = [parameters_content]
   }
 
-  name               = var.name
-  location           = var.location
+  name     = var.name
+  location = var.location
 
   template_content   = var.arm_script
   parameters_content = jsonencode({ for k, v in var.parameters_override : k => { value = v } })
