@@ -30,7 +30,7 @@ Please leverage issues if you have any feedback or request on how we can improve
 
 ```hcl  
 module "mod_deploy_arm_rg" {  
-  source = "azurenoops/overlays-arm-deployment/azurerm//modules/resource_group"  
+  source = "POps-Rox/tf-az-overlays-arm-deployment/azurerm//modules/resource_group"  
   version = "x.x.x"  
   
   name                = var.name
